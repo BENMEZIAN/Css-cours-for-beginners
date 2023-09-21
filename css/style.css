@@ -1,0 +1,331 @@
+/* selector : simple selector using tag*/
+h2{
+    color: black;
+}
+
+/* selector : grouping tags with comma (,)*/
+p{
+    color: blue;
+}
+
+.p1{
+    color: green;
+}
+
+/* selector : class (any tag has class called 'test' takes the given styles */
+.test{
+    color: yellow;
+}
+
+/* selector : tag with class (any specific tag has id called 'test' takes the given styles */
+p.test{
+    color: purple;
+}
+
+/* selector : id (any tag has id called 'test' takes the given styles */
+#test{
+    color: yellowgreen;
+}
+
+#my{
+    color: gold;
+}
+
+/* Descendent selector */
+div p strong{ /* this would colorize just the strong tag (plus priorité que direct child selector)*/
+    color: red;
+}
+
+div h2 strong{ /* this would colorize just the strong tag (plus priorité que direct child selector)*/
+    color: yellow;
+}
+
+/* Direct child selector */
+div strong{
+    color: violet;
+}
+
+div > p{ /* this would colorize all the p tag*/
+    color: green;
+}
+
+div > h2{ /* this would colorize all the h2 tag*/
+    color: silver;
+}
+
+/*----------------------------------------------------------------------------*/
+div ul li{
+    color:purple;
+}
+
+.container .list #item1{
+    color: red;
+}
+
+.container > .list > #item2{
+    color:gold;
+}
+
+/*----------------------------------------------------------------------------*/
+/* Adjacent selector */
+
+div + p { /*Select p tag that is directly after div.*/
+    background-color: yellow;
+}
+
+/* Adjacent selector */
+div ~ p { /*Select all p tags that are directly after div.*/
+    background-color: yellowgreen;
+}
+
+h1{
+    /*border: solid 2px green;*/
+    border-style: solid; /*none,hidden,dotted,dashed,solid,double,groove,ridge,inset,outset*/
+    border-width: 2px;
+    border-color: green;
+    width: fit-content; /* largeur*/
+    height: 40px; /* longueur*/
+    padding: 10px;/* for all direction equivalent to padding: 10px 10px 10px 10px; top right bottm left*/
+    margin: 10px;/* for all direction equivalent to marging: 10px 10px 10px 10px; top right bottm left*/
+}
+
+
+h3{
+    border: 2px solid magenta;
+    background:red;
+    width: 50%;
+    height: auto; /* no changes*/
+}
+
+div.css{
+    width: 50%;
+    background: maroon;
+}
+
+div.css h3#css{
+    border: 1px solid green;
+    width: 100%;
+}
+
+h4{
+    background-color: gold;
+    width: fit-content; /*the width of the block is equal to the width of the content*/
+}
+
+h5{
+    background-color: gold;
+    width: min-content; /*the width of the block is equal to the width of highest word*/
+}
+
+h6{
+    background-color: gold;
+    width: max-content; /*the width of the block is equal to the width of the content*/
+}
+
+.width{
+    background-color: green;
+    width: 300px; /*Fixed width with all devices*/
+}
+
+.m-width{
+    background-color: yellowgreen;
+    max-width: 300px; /*max-width = 300px, you could get less if your site is opened on another device*/
+    /*for responsive design*/
+    margin-bottom: 10px;
+}
+
+div.height{
+    background: magenta;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.border-radius{
+    width: 40px;
+    height: 40px;   
+    background-color: blue;
+    border-radius: 20px;
+    /*if you want to creat cercle else you ommit width and height*/
+}
+
+/*--------------------------------------------------------------------*/
+.container {
+    border: 2px solid #ccc;
+    padding: 10px;
+    width: 20em;
+    margin: 10px auto; /*centering this div*/
+}
+  
+.item {
+    width: fit-content;
+    background-color: #8ca0ff;
+    color: silver;
+    padding: 5px;
+    text-align: center; /* work only with block elements*/
+    margin: 1em auto;
+}
+
+#arabic{
+    width: max-content;
+    background-color: #8ca0ff;
+    color: yellow;
+    padding: 5px;
+    text-align: right; /* work only with block elements*/
+    margin: 1em 0px 1em 225px;
+    direction: rtl; /*right to left (in arabic)*/
+}
+
+#lowercase{
+    text-transform: uppercase;
+}
+
+#uppercase{
+    text-transform: lowercase; 
+    /*lowercase, uppercase, capitalize, none*/
+}
+
+.direction{
+    border: 2px solid #ccc;
+    padding: 10px;
+    width: 20em;
+    margin: 0 auto; /*centering this div*/
+}
+
+.direction #rtl{
+    width: max-content;
+    background-color: #8ca0ff;
+    color: yellow;
+    margin: 0px 0px 0px 225px;
+    padding: 5px;
+    text-align: right; /* work only with block elements*/
+    direction: rtl;
+}
+
+/* 
+text-shadow : H-shadow V-shadow Blur Color
+box-shadow : H-shadow V-shadow Blur Spread Color Inset
+- Inset : shadow to the interior
+- defaut: shadow to the exterior
+*/
+div.shadow p{
+    color: black;
+    text-align: center;
+    text-shadow: 10px 10px 2px red , 20px 20px 2px yellow;
+}
+
+div.boxshadow{
+    background-color: gold;
+    height: 100px;
+    width: 100px;
+    box-shadow: 1px 1px 10px 5px green , 
+    5px 5px 10px 10px crimson,
+    10px 10px 10px 10px blue;
+}
+
+/*white-space : white-space: normal|nowrap|pre|pre-line|pre-wrap|initial|inherit;
+- normal : keep wrapping
+- nowrap : don't wrap
+doesn't work with one word
+word-wrap : break-line
+*/
+div.whitespace{
+    background-color: yellowgreen;
+    width: 200px;
+    padding: 0px;
+    white-space: pre-line; /*to make spaces between lines*/
+    margin: 10px 10px 10px 10px;
+}
+/*
+div{
+    background-color: yellowgreen;
+    width: 200px;
+    word-wrap: break-word;
+    margin: 10px 10px 10px 10px;
+
+}
+*/
+/*------------------------------------------------------------------*/
+/*
+Font families are divided into two types:
+
+- Generic family: Refers to the category of the fonts that share similar design characteristics. 
+For example, Serif, sans-serif, Cursive, etc.
+** Font family: Refers to the specific font family name like Helvetica, Arial, Georgia, etc.
+**font-size: predefined keyword|length;
+predefined keyword:small, medium, large, etc.
+length: specific length unit like px, em or points.like 24px, 2em, etc.
+
+normal text = 16px = 1em = 100px
+h1 = 32px = 2em = 200px
+
+**font-style: normal| italic | oblique
+
+**font-variant: normal| small-caps 
+convert to uppercase without changing the size
+
+**font-weight: normal | bold | bolder | lighter | number | inherit | initial;
+100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 1900
+
+font : shorthand of all the font styles
+
+line-height : space between lines
+*/
+
+h3.font{
+    border: solid 2px white;
+    background-color: white;
+    font-family:Andale Mono, monospace;
+    font-size: 100%;
+    text-transform: uppercase;
+    font-weight:initial;
+}
+
+p.text{
+    color: black;
+}
+
+p#text1{
+    font-family:Arial;
+    font-size: 20px;
+    font-variant: small-caps;
+    font-weight:bold;
+}
+
+p#text2{
+    font-family: Georgia;
+    font-size: 40px;
+    font-variant: small-caps;
+    font-weight:bold;
+}
+
+p#text3{
+    font-family: fantasy;
+    font-size: 60px;
+    font-variant: small-caps;
+    font-weight:bold;
+}
+
+p#text4{
+    font-family: Courier, monospace;
+    font-size: 60px;
+    font-variant: small-caps;
+    font-weight:inherit;
+}
+
+p#text5{
+    font-family: Brush Script MT, Brush Script Std, cursive;
+    font-size: 60px;
+    font-variant: small-caps;
+    font-weight:inherit;
+}
+
+h4{
+    background-color: white;
+    /*font-style: italic;
+    font-variant: small-caps;
+    font-weight:bold;
+    font-size: 60px;
+    line_height: 20px
+    font-family: fantasy;*/
+    font: italic small-caps bold 60px/20px fantasy;
+}

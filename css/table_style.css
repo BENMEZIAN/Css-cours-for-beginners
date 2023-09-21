@@ -1,0 +1,108 @@
+h2{
+    text-align: center;
+    text-decoration: underline;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 0 auto;
+    font-family: sans-serif;
+    text-align: center;
+	vertical-align: middle;
+    overflow: auto;
+    z-index: 1;
+}
+  
+th, td {
+    border: 1px solid black;
+    padding: 8px;
+}
+
+thead th {
+    width: 25%;
+}
+
+tbody td, thead th {
+    position: relative;
+}
+
+/*Targeting a Specific Table Cell*/
+.cell-highlight{
+    background-color: yellow;
+    font-weight: bold;
+}
+
+/*Styling the Table Caption*/
+caption {
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/*Styling the Top Row Header Cells*/
+thead {
+    background-color: #333;
+    color: white;
+    font-size: 0.875rem;
+	text-transform: uppercase;
+	letter-spacing: 2%;
+}
+
+/*Styling the body Rows Cells*/
+tbody tr:nth-child(odd) {
+    background-color: rgb(54, 224, 54);
+}
+  
+tbody tr:nth-child(even) {
+    background-color: #07ed67;
+}
+
+/*Styling the Left Side Header Cells*/
+tbody th {
+    background-color:black;
+    color: #fff;
+    text-align: center;
+}
+
+/*Hover table*/
+/* Hover table rows */
+table tbody tr.row:hover {
+    background-color: coral;
+}
+
+/* Hover table cells within the row */
+table tbody tr.row:hover td {
+    background-color: coral;
+}
+
+/* Hover table headers (th) within the row */
+table tbody tr.row:hover th {
+    background-color: coral;
+}
+
+
+
+/*
+tbody td:hover::before {
+    background-color: #CCE7E7;
+    content:'\00a0';
+    height: 100%;
+    left: -5000px;
+    position: absolute;
+    top: 0;
+    width: 10000px;
+    z-index: -1;
+}
+tbody td:hover::after {
+    background-color: #CCE7E7;
+    content:'\00a0';
+    height: 10000px;
+    left: 0;
+    position: absolute;
+    top: -5000px;
+    width: 100%;
+    z-index: -1;
+}
+*/

@@ -1,0 +1,71 @@
+.parent{
+    background-color: yellow;
+}
+
+.Red{
+    background-color: red;
+    height: 50px;
+    width: 50px;
+}
+
+.Green{
+    background-color: green;
+    height: 50px;
+    width: 50px;
+}
+
+.Blue{
+    background-color: blue;
+    height: 50px;
+    width: 50px;
+}
+
+.float{
+    float: left;
+}
+
+.div1 {
+    float: left;
+    padding: 10px;
+    border: 3px solid #73AD21;
+}
+  
+.div2 {
+    padding: 10px;
+    border: 3px solid red;
+}
+  
+.div3 {
+    float: left;
+    padding: 10px;  
+    border: 3px solid #73AD21;
+}
+  
+.div4 {
+    padding: 10px;
+    border: 3px solid red;
+    clear: left;
+}
+
+section {
+    box-sizing: border-box;
+    border: 1px solid blue;
+    width: 100%;
+    float: left;
+}
+  
+.one {
+    margin: 5px;
+    width: 50px;
+    height: 150px;
+}
+  
+.left {
+    float: left;
+    background: pink;
+}
+  
+.right {
+    float: right;
+    background: cyan;
+}

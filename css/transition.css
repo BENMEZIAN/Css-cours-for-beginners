@@ -1,0 +1,21 @@
+/*transition : property/all duration timing-function delay;*/
+div{
+    height:30px;
+    width:80px;
+    padding:5px;
+    background-color:red;
+    transition: width 2s; /* the width transition to the hover is 2 seconds */
+}
+
+div:hover{
+    background-color:blue;
+    width: 200px;
+    text-align: center;
+    color: gold;
+}
+
+#div1 {transition-timing-function: linear;}
+#div2 {transition-timing-function: ease;}
+#div3 {transition-timing-function: ease-in;}
+#div4 {transition-timing-function: ease-out;}
+#div5 {transition-timing-function: ease-in-out;}

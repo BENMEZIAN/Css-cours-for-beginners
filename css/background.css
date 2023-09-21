@@ -1,0 +1,40 @@
+p {
+    font-size: 1.5em;
+    color: #fe7f88;
+    background-image: none;
+    background-color: transparent;
+}
+  
+div {
+    border: 2px dotted green;
+    background-image: url("images/abdelmalek.jpg");
+    background-size: 300px 300px;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-attachment: scroll;
+    background-origin:padding-box;
+    padding: 20px;
+}
+
+div.section1 {
+    border: 2px dotted green;
+    background-image: url("images/abdelmalek.jpg");
+    background-size: 300px 300px;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-attachment: scroll;
+    background-origin:content-box;
+    padding: 20px;
+}
+
+div.section2 {
+    border: 2px dotted green;
+    background-image: url("images/abdelmalek.jpg");
+    background-size: 300px 300px;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-attachment: scroll;
+    background-origin:border-box;
+    padding: 20px;
+}
+

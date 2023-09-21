@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="gradient.css">
+</head>
+<body>
+
+    <h1>CSS Linear Gradients</h1>
+
+    <p>
+        To create a linear gradient you must define at least two color stops. Color stops are the 
+        colors you want to render smooth transitions among. You can also set a starting point and a 
+        direction (or an angle) along with the gradient effect.
+    </p>
+
+    <h2>Syntax</h2>
+
+    <h1>Using direction</h1>
+
+    <code>background-image: linear-gradient(direction, color-stop1, color-stop2, ...);</code>
+
+    <h3>Direction - Top to Bottom (this is default)</h3>
+
+    <code>#grad {
+        background-image: linear-gradient(red, yellow);
+    }</code>
+
+    <h3>Direction - Left to Right</h3>
+
+    <code>#grad {
+        background-image: linear-gradient(to right, red, yellow);
+    }</code>
+
+    <h3>Direction - Diagonal</h3>
+
+    <p>
+        <code>#grad {
+            background-image: linear-gradient(to bottom right, red, yellow);
+        }</code>
+        or:
+        <code>#grad {
+            background-image: linear-gradient(to top left, red, yellow);
+        }</code>
+    </p>
+
+    <h1>Using angle</h1>
+
+    <code>background-image: linear-gradient(angle, color-stop1, color-stop2);</code>
+
+    <h3>Angle - 45 degrees</h3>
+
+    <code>
+        #grad {
+            background-image: linear-gradient(45deg, blue, red);
+        }
+    </code>
+
+    <h3>Angle - 0 degree</h3>
+
+    <code>
+        #grad {
+            background-image: linear-gradient(0deg, blue, red);
+        }
+    </code>
+
+    <h3>Angle - 90 degree</h3>
+
+    <code>
+        #grad {
+            background-image: linear-gradient(90deg, blue, red);
+        }
+    </code>
+
+    <h2>Using multiple colors</h2>
+
+    <code>
+        #grad {
+            background-image: linear-gradient(green, blue, red);
+        }
+    </code>
+    or : 
+    <code>
+        #grad {
+            background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet);
+        }
+    </code>
+
+    <h2>Repeating linear gradient</h2>
+
+    <code>background-image: repeating-linear-gradient(red, yellow);</code>
+
+    <div class="g1">
+        
+    </div>
+
+    <div class="g2">
+        
+    </div>
+
+    <div class="g3">
+        
+    </div>
+
+    <div class="g4">
+        
+    </div>
+
+    <div class="g5">
+        
+    </div>
+
+    <h1>CSS Radial Gradients</h1>
+
+    <p>
+        <code>background-image: radial-gradient(shape, color-stop1, color-stop2, ...);</code> <br>
+        <span>shap : circle or ellipse</span>
+    </p>
+
+    <h2>Repeating radial gradient</h2>
+
+    <code>background-image: repeating-radial-gradient(red, yellow);</code>
+    
+    <div class="rg1">
+        
+    </div>
+
+    <div class="rg2">
+        
+    </div>
+
+    <div class="rg3">
+        
+    </div>
+
+    <div class="rg4">
+        
+    </div>
+
+    <div class="rg5">
+        
+    </div>
+
+
+
+</body>
+</html>

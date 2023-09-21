@@ -1,0 +1,56 @@
+
+/*
+    1- [attr]
+    2- element[attr]
+    3- [attr = "value"]
+    4- element[attr = "value"]
+    5- element[attr ^= "value"] starts with
+    6- element[attr $= "value"] ends with
+    7- element[attr *= "value"] substring
+    8- element[attr ~= "value"] space substring
+*/
+
+[type]{
+    background-color: rebeccapurple;
+}
+
+[type="submit"]{
+    background-color: red;
+}
+
+input[type]{
+    background-color:green;
+}
+
+input[type="password"]{
+    background-color:blue;
+}
+
+input[type="number"]{
+    background-color: purple;
+}
+
+a[target="_blank"] {
+    background-color: yellow;
+}
+
+a[target="_top"] {
+    background-color: greenyellow;
+}
+
+a[href *= "youtube"]{
+    background-color: red;
+}
+
+a[href $= "org"]{
+    background-color: gold;
+    
+}
+
+a[href ^= "http://www.disney."]{
+    background-color: pink;
+}
+
+a[title ~= "google"]{
+    background-color: crimson;
+}

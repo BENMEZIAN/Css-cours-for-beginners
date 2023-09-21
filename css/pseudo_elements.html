@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="pseudo_elements.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+    </head>
+    <body>
+        
+        <h2>Pseudo elements</h2>
+
+        <h2>first-line</h2>
+
+        <code>
+            p.first-line::first-line{
+                color:red;
+                background-color: #fff;
+                font-size: 20px;
+            }
+        </code>
+
+        <p class="first-line">
+           Lorem ipsum dolor sit amet consectetur, adipisicing elit. In ea, totam molestias temporibus eligendi maxime eveniet consequuntur omnis corrupti quaerat deleniti nulla voluptatibus corporis at, ex esse nisi animi? Adipisci repudiandae ullam nobis illo doloremque? Placeat voluptas ut laboriosam magni quisquam error reiciendis tempore iure aliquam alias modi pariatur culpa nemo recusandae, quia fugiat earum rerum laudantium provident ratione consequuntur consectetur dolorum. Debitis quod, nesciunt error odio molestias repellendus quas facere possimus amet quis maxime illum labore velit accusamus vitae esse pariatur repudiandae magni nisi. Unde quae, quidem autem exercitationem dolorem optio amet obcaecati voluptatem inventore, cupiditate, veritatis at vero!
+        </p>
+
+        <h3>::first-letter</h3>
+
+        <code>
+            p.first-letter::first-letter{
+                color:red;
+                background-color: #fff;
+                font-size: 20px;
+            }
+        </code>
+
+        <p class="first-letter">
+           Lorem ipsum dolor sit amet consectetur, adipisicing elit. In ea, totam molestias temporibus eligendi maxime eveniet consequuntur omnis corrupti quaerat deleniti nulla voluptatibus corporis at, ex esse nisi animi? Adipisci repudiandae ullam nobis illo doloremque? Placeat voluptas ut laboriosam magni quisquam error reiciendis tempore iure aliquam alias modi pariatur culpa nemo recusandae, quia fugiat earum rerum laudantium provident ratione consequuntur consectetur dolorum. Debitis quod, nesciunt error odio molestias repellendus quas facere possimus amet quis maxime illum labore velit accusamus vitae esse pariatur repudiandae magni nisi. Unde quae, quidem autem exercitationem dolorem optio amet obcaecati voluptatem inventore, cupiditate, veritatis at vero!
+        </p>
+
+        <h3>::selection</h3>
+
+        <code>
+            p::selection{
+                background-color: yellow;
+                color: gray;
+            }
+        </code>
+
+        <p>
+           Lorem ipsum dolor sit amet consectetur, adipisicing elit. In ea, totam molestias temporibus eligendi maxime eveniet consequuntur omnis corrupti quaerat deleniti nulla voluptatibus corporis at, ex esse nisi animi? Adipisci repudiandae ullam nobis illo doloremque? Placeat voluptas ut laboriosam magni quisquam error reiciendis tempore iure aliquam alias modi pariatur culpa nemo recusandae, quia fugiat earum rerum laudantium provident ratione consequuntur consectetur dolorum. Debitis quod, nesciunt error odio molestias repellendus quas facere possimus amet quis maxime illum labore velit accusamus vitae esse pariatur repudiandae magni nisi. Unde quae, quidem autem exercitationem dolorem optio amet obcaecati voluptatem inventore, cupiditate, veritatis at vero!
+        </p>
+
+        <h3>::after ::before</h3>
+
+        <code>
+            a {
+                color: #0000ff;
+                text-decoration: none;
+            }
+              
+            a::before {
+                content: '🔗';
+            }
+              
+            .local-link::before {
+                display: inline-block;
+                width: 15px;
+                height: 15px;
+                margin-right: 5px;
+            }            
+        </code>
+
+        <p>
+            Learning resources for web developers can be found all over the internet. Try out
+            <a href="https://web.dev/">web.dev</a>, 
+            <a href="https://www.w3schools.com/">w3schools.com</a> or our
+            <a href="https://developer.mozilla.org/" class="local-link"><i class="fa fa-fw fa-firefox"></i>MDN web docs</a>.
+        </p>
+
+        <code>
+            p::after{
+                content: "this is after";
+            }
+            p::before {
+                content: "this is before";
+            }
+        </code>
+
+        <p class="hello">hello world</p>
+        
+    </body>
+</html>

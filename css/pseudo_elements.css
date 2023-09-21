@@ -1,0 +1,52 @@
+p.first-line::first-line{
+    color:red;
+    background-color: #fff;
+    font-size: 20px;
+}
+
+p.first-letter::first-letter{
+    color:red;
+    background-color: #fff;
+    font-size: 20px;
+}
+
+p::selection{
+    background-color: yellow;
+    color: gray;
+}
+/* -- https://developer.mozilla.org/en-US/docs/Web/CSS/::before */
+a {
+    color: #0000ff;
+    text-decoration: none;
+}
+  
+a::before {
+    content: '🔗';
+}
+  
+.local-link::before {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+}
+
+/* to make space at the beginning*/
+p.hello {
+    position: relative;
+    height: 50px;
+    background-color: crimson;
+}
+
+p.hello::before {
+    content: ' ';
+    color: gold;
+    background-color: magenta;
+    /*1- height and width*/
+    height: 100%;
+    width: 10px;
+    /*2- position*/
+    position: absolute;
+    top: 0;
+    left: 0;
+}

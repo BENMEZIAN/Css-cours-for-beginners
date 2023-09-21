@@ -1,0 +1,57 @@
+body {
+    padding: 0; 
+    margin: 0;
+}
+
+.navigation{
+    background-color: red;
+    width: 100%;
+    height: 65px;
+}
+
+.nav {
+    list-style-type: none;
+    text-align: right;
+    margin: 0px;
+    margin-left: 0px;
+    padding: 0;
+    float:right;
+    width:max-content;
+}
+.nav li {
+    display: inline-block;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.nav li a{
+    text-decoration: none;
+    color: white;
+}
+  
+span.a {
+    display: inline; /* the default for span */
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    border: 1px solid blue;  
+    background-color: yellow; 
+}
+  
+span.b {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    border: 1px solid blue;    
+    background-color: yellow; 
+}
+  
+span.c {
+    display: block;
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    border: 1px solid blue;    
+    background-color: yellow; 
+}

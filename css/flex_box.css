@@ -1,0 +1,79 @@
+/* 
+at the parent:
+- display: flex | inline-flex
+- flex-directon: row | column | column-reverse | row-reverse
+- flex-wrap: nowrap | wrap | wrap-reverse
+- flex-flow: [flex-directon] [flex-wrap]
+- justify-content: center | flex-start | flex-end | space-between | space-around | space-evenly(control on the X axis)
+- align-items: center | flex-start | flex-end | stretch | baseline (with space)
+- align-content: center | flex-start | flex-end | stretch | baseline (without space)
+
+    if flex-direction = row
+        justify-content = X
+        align-items = Y
+        align-content = Y
+    
+    if flex-direction = column
+        justify-content = Y
+        align-items = X
+        align-content = X
+*/
+
+.parent{
+    background-color: gold;
+    padding: 10px;
+    height: 300px;
+    display: flex;
+    flex-direction: row; /* column */
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* space between elements, margin, with center or space-evenly */
+}
+
+.parent div{
+    margin: 10px;
+    padding: 10px;
+    /*width: 150px;*/
+    text-align: center;
+}
+
+/* 
+at the children:
+- align-self: center | flex-start | flex-end | stretch | baseline (with space)
+- order: {positive number}
+- flex-grow: {positive number} (grow of the childs)
+- flex-shrink: {positive number} (shrink of the childs)
+- flex-basis: (width)
+flex : [flex-grow][flex-shrink][flex-basis]
+*/
+
+
+.item1{
+    background-color: #3498db;
+    /*flex-basis: 150px; /* like width
+    height if flex-direction = column */
+    flex: 1 0;
+}
+
+.item2{
+    background-color: #8e44ad;
+    flex-basis: 150px;
+    flex: 1 0;
+}
+
+.item3{
+    background-color: #e74c3c;
+    flex-basis: 150px;
+}
+
+.item4{
+    background-color: #2ecc71;
+    flex-basis: 150px;
+}
+
+.item5{
+    background-color: #9b59b6;
+    flex-basis: 150px;
+}
+
